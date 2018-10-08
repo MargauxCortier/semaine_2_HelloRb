@@ -1,19 +1,20 @@
 def translate(word)
-word.split(' ') |mot| 
-    alphabet = ("a..z").to_i
-    vowel = %w[a e i o u]
-    consonne = alphabet unless vowel 
 
-    if vowel.include?(mot[0])
-    	"#{mot}ay"
-    elsif
-    	consonants.include?(mot[0]) && consonants.include?(mot[1])
-        word2 = mot[2..-1]
-    	"#{word2}#{mot[0]}#{mot[1]}ay"
-	elsif
-		word1 = mot[1..-1]
-		"#{word1}#{mot[0]}ay"
-	
-	end
+vowels = ['a','e','i','o','u']
+consonants = ['b','c','d','f','g', 'h', 'k', 'l', 'm', 'n', 'p', 'q','r','s','t','v','w','x','y','z']
 
+
+    if vowels.include?(word[0])
+        "#{word}ay"
+
+
+    elsif consonants.include?(word[0]) && consonants.include?(word[1])
+        word3 = word[2..-1] 
+        "#{word3}#{word[0]}#{word[1]}ay"
+          
+
+    else word2 = word[1..-1]
+        "#{word2}#{word[0]}ay"
+        
+    end
 end
