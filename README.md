@@ -1,1 +1,4 @@
-# semaine_2_HelloRb
+Lundi exercices
+
+travail:
+Pauline Labaisse et Margaux cortier
